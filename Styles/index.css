@@ -1,7 +1,14 @@
 /* color palette: 41436A, 984063,F64668,FE9677 */
+#landing_image{
+    display: flex;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
 #nav_bar{
     font-family:'lato';
-    
     display: flex;
     justify-content: space-between;
     justify-content: right;
@@ -13,15 +20,29 @@
     position: fixed;
     right: 3%;
     top: 4%;
+    z-index: 5;
+}
+#blank_navbar{
+    top: 0%;
+    width: 100%;
+    height: 50px;
+    visibility: hidden;
+    z-index: 5;
+    display: flex;
+    position: fixed;
 }
 body{
     background-color: #212022;
+    color: white;
+    font-family: 'lato';
+    
+
     height: 150vh;
 }
 /* p { font-family: Jura; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } */
 .nav_elements{
     padding-right: 30px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 100;
 }
 a{
@@ -30,26 +51,54 @@ a{
 }
 #home{
 width:100%;
-margin-top: 5fr;
-position: relative;
-top: 50%;
+/* margin-top: 5fr; */
+position:relative;
+top: 38%;
+height: 60%;
+
 
 }
+.heading_hr{
+    border: none;
+    width: 70px;
+    border-top: 3px solid #ffffff; /* Adjust color and thickness as needed */
+    margin-left: 45px;
+    /* padding: 0; */
+    margin-top: -3px;
+}
+.heading_text{
+    font-size: 36px;
+    /* justify-self: left; */
+    font-family: 'Lato';
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
 #about{
+    margin-top: 20px;
     width:100%;
     position: relative;
-    top: 50%;
+    top: 40%;
+    height: 200vh;
+    margin-left: 10px;
+
+}
+#contact_hr{
+    width: 100px;
 }
 #contact{
     width:100%;
-    position: relative;
-    top: 50%;
+    /* position: relative; */
+    height: 100vh;
+    margin-left: 10px;
+    display: flex;
 }
 #projects
 {
     width:100%;
     position: relative;
-    top: 50%;
+    height: 100vh;
+    margin-left: 10px;
+    margin-bottom: 30px;
 }
 #name{
     font-family: 'lato';
@@ -57,20 +106,24 @@ top: 50%;
     font-weight:400;
     color: white;
     margin-left:5%;
-    margin-top: 14%;
+    margin-top: 20%;
     margin-bottom: 4%;
-    position: fixed;
-    top: 10%;
+    z-index: -1;
+    /* position: fixed; */
+    top: 8%;
 }
 #designation{
     font-family: 'lato';
-    font-size: 48px;
+    font-size: 36px;
     font-weight:200;
     color: white;
-    margin-left:4% ;
-    position: fixed;
-    top: 54%;
+    margin-left:6% ;
+    z-index: 0;
+    position: relative;
+    /* position: fixed; */
+    /* top: 54%; */
 }
+
 hr{
     color: white;
 }
@@ -78,10 +131,312 @@ hr{
     /* background-color: white; */
     height: 300px;
     width: 100%;
-    position: relative;
-    top: 60%;
+    position: fixed;
+    top: 90%;
+    justify-content: center;
+    display: flex;
+    z-index: 4;
+}
+.bottom_logos{
+    height: 30px;
+    width: 30px;
+    
 }
 #linkedin_logo{
     height: 30px;
     width: 30px;
 }
+#landing_page{
+    width: 100%;
+    /* background-image: url("Assets\landing_background.png");
+    background-size: cover; */
+    /* z-index: 1;
+    background-image: url("../Assets/landing_background.png");
+    background-size: 500px; */
+}
+#landing_page_div{
+display: flex;
+top: 100px;
+left:100px;
+margin:-50px 30px 20px 30px ;
+position:inherit;
+}
+#name_designation{
+    width: 100%;
+    flex: 5;
+}
+#landing_content{
+
+    flex: 4;
+    font-size: 22px;
+    /* margin-left:2%; */
+    border-radius: 25%;
+    background-color: #21202279;
+    box-shadow: 0px 0px 10px #000000;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    margin-right: 30px;
+    z-index: -1;
+    line-height: 1.25;
+    word-spacing: 0.2em;
+    height: 280px;
+    /* position: fixed; */
+    /* top: 8%; */
+}
+#landing_content_text{
+    margin: 45px 20px ;
+    text-align: center;
+
+}
+#about_content{
+    padding: 5px 15px;
+    line-height: 1.25;
+    word-spacing: 0.2em;
+    font-size: 22px;
+}
+#skills{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+}
+.skill_box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    /* border: 1px  solid white; */
+    border-radius: 30%;
+    background-color: #21202296;
+    box-shadow: 0px 0px 10px #000000;
+}
+#skill_text{
+    font-size: 26px;
+
+    text-align: center;
+}
+#skills_coding_image{
+    justify-content: center;
+    height: 45px;
+    width:45px;
+    margin-top: 10%;
+    margin-left: 42%;
+    /* align-items: center; */
+    /* border: 1px solid white; */
+    /* position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);  */
+    /* text-align: center; */
+    
+}
+
+#hobbies{
+    display: flex;
+    width: 100%;
+    height: 35vh;
+    margin-top: 2%;
+    margin-left: 30px;
+    
+    /* justify-content: space-between; */
+}
+.hobbies_box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 50px;
+    /* border: 1px  solid white; */
+    border-radius: 50%;
+    background-color: #21202296;
+    box-shadow: 0px 0px 10px #000000;
+}
+#hobbies_text{
+    font-size: 26px;
+margin-top: 70px;
+    text-align: center;
+}
+#hobbies_reading_image{
+    justify-content: center;
+    height: 40px;
+    width:40px;
+    margin-top: 25%;
+    margin-left: 42%;
+    /* align-items: center; */
+    /* border: 1px solid white; */
+    /* position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);  */
+    /* text-align: center; */
+    
+}
+
+.fa-laptop-code{
+    font-size: 2rem;
+    align-items: center;
+}
+#coding_text{
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    font-size:22px ;
+}
+#skill_programing_content{
+    line-height: 1.25;
+    word-spacing: 0.2em;
+    margin: 3px 7px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#reading_text{
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-size:24px ;
+}
+#hobies_reading_content{
+    line-height: 1.25;
+    word-spacing: 0.2em;
+    margin: 3px 7px;
+    font-size: 18px;
+    text-align: center;
+}
+#education_text{
+  font-size: 24px;
+  text-align: center;
+}
+#education{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+}
+.education_details{
+    flex: 1;
+    margin-left: 85px;
+    justify-items: center;
+    margin-top: 30px;
+}
+.education_box{
+    width: 70%;
+    background-color: #21202293;
+    box-shadow: 0px 0px 10px #000000;
+    height: 250px;
+    border-radius: 30%;
+    justify-content: center;
+}
+/* .education_box : hover{
+    box-shadow: 0px 0px 10px #343434;
+} */
+.education_image{
+    height: 50px;
+    width: 50px;
+    margin: 40px 100px 0px 100px;
+
+}
+.education_details_text{
+    margin: 20px;
+    text-align: center;
+}
+#profile_pic{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: 80px;
+    left: 250px;
+    z-index: 3;
+}
+#image_div{
+    height: 0%;
+    width: 25%;
+    
+}
+#contact_text{
+    font-size: 42px;
+    color: #000000 ;
+}
+
+#projects{
+    /* display: flex; */
+}
+#project_div{
+    margin-top: 40px;
+    margin-left: 40px;
+width: 90%;
+height: 180%;
+background-color: #21202279;
+box-shadow: 0px 0px 10px #000000;
+/* border-top-left-radius: 25%; */
+border-radius: 10%;
+display: flex;
+flex-direction: column;
+z-index: 0;
+}
+.project_box{
+    flex: 1;
+display: flex;
+    margin: 30px 50px;
+    background-color: #2120226c;
+    box-shadow: 0px 0px 10px #000000;
+    border-radius: 10%;
+
+}
+.projext_content{
+    text-align: center;
+    font-size: 24px;
+    margin: 15px 5px;
+}
+.project_image{
+margin: 40px 10px 25px 40px;
+height: 200px;
+width: 200px;
+border-radius: 30%;
+}
+.project_box_content{
+    margin-top: 30px;
+    text-align: center;
+}
+#contact_box{
+justify-content: center;
+align-items: center;
+height: 400px;
+width: 450px;
+background-color: #21202291;
+box-shadow: 0px 0px 10px #000000;
+border-radius: 25%;
+margin-top: 150px;
+margin-left: 180px;
+
+}
+#getInTouch_image{
+    height: 300px;
+width: 300px;
+border-radius: 50%;
+margin-top: 200px;
+margin-left: 340px;
+}
+#contact_box_head{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+}
+.contact_box_text{
+    text-align: left;
+    margin-left: 44px;
+    margin-bottom: 10px;
+}
+#contact_box_text_name{
+    font-size: 24px;
+}
+#contact_box_content{
+    margin-top: 20px;
+}
+
+.nav_elements :hover{
+    font-size: 26px;
+
+}
+/* #bottom_logos:hover{
+    height: 32px;
+    width: 32px;
+} */
